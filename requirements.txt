@@ -1,0 +1,4 @@
+Django==1.9
+django-crispy-forms==1.6.0
+django-custom-user==0.6
+wheel==0.24.0

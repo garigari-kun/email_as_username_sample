@@ -1,0 +1,17 @@
+{% extends 'accounts/base.html' %}
+{% load crispy_forms_tags %}
+{% block title %}ようこそ！{% endblock title %}
+
+
+{% block content %}
+<div class = "container">
+	<h3>基本情報の入力</h3>
+	<h4>店舗の基本情報を入力すれば、あなたのオンライン予約ページが自動的に構築されます！</h4>
+
+	<form method = "post" action = "">
+		{% csrf_token %}
+		{{ form|crispy }}
+		<input type = "submit" class = "btn btn-primary" value = "登録">
+	</form>
+</div>
+{% endblock content %}

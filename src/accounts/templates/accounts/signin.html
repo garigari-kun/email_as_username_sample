@@ -1,0 +1,16 @@
+{% extends 'accounts/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}ユーザー登録{% endblock title %}
+
+
+{% block content %}
+<div class = "container">
+	<h1>ユーザー登録</h1>
+	<form method = "post" action = "">
+		{% csrf_token %}
+		{{ form|crispy }}
+		<input type = "submit" class = "btn btn-primary" value = "一か月無料でお試し！">
+	</form>
+</div>
+{% endblock content %}
